@@ -17,7 +17,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   */
 
   // Modify the line of code BELOW to run a different exercise
-  exercise_01();
+  exercise_08();
   // Modify the line of code ABOVE to run a different exercise
 }
 
@@ -40,7 +40,17 @@ function exercise_01() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+let myString = "Hello";
+let myNumber = 32;
+let myBoolean = true;
+let myObject = {name: "Doug"};
+let myUnassigned;
+
+console.log(typeof myString);
+console.log(typeof myNumber);
+console.log(typeof myBoolean);
+console.log(typeof myObject);
+console.log(typeof myUnassigned);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -60,7 +70,9 @@ function exercise_02() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  let myNumber = 25;
+  let myString = String(myNumber);
+  console.log(myString, typeof myString);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -82,7 +94,10 @@ function exercise_03() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  let zeroBoolean = Boolean(0);
+  let oneBoolean = Boolean(1);
+  console.log(zeroBoolean);
+  console.log(oneBoolean);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -101,7 +116,8 @@ function exercise_04() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  let notANumberValue = Number("Doug");
+  console.log(isNaN(notANumberValue));
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -122,7 +138,9 @@ function exercise_05() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  let age = 30;
+  let message = `I am ${age} years old.`
+  console.log(message);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -148,7 +166,10 @@ function exercise_06() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+let sentence1 = name + " has " + number + " apples";
+console.log(sentence1);
+let sentence2 = `${name} has ${number} apples`;
+console.log(sentence2);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -166,7 +187,13 @@ function exercise_07() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  let person = {
+    name: "Doug",
+    age: 39
+  };
+  
+  let jsonString = JSON.stringify(person);
+  console.log(jsonString);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -189,7 +216,9 @@ function exercise_08() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  let parsedObject = JSON.parse(jsonStringToParse);
+  console.log(parsedObject.name);
+  console.log(parsedObject.age);
 
   // CODE IN THE OPEN LINES ABOVE
 }
